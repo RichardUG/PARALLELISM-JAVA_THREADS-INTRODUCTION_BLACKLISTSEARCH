@@ -59,7 +59,7 @@
 > ```
 
 >**Resultado  ```CountMainThreads``` con ```start()```**
-> ![](PARALLELISM-JAVA_THREADS-INTRODUCTION_BLACKLISTSEARCH/img/CountThreadsMainStartResult.PNG)
+> ![](img/CountThreadsMainStartResult.PNG)
 
 **Parte II - Ejercicio Black List Search**
 
