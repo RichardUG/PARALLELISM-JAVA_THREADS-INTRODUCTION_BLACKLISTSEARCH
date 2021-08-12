@@ -12,6 +12,8 @@ import static org.junit.Assert.*;
 /**
  *
  * @author hcadavid
+ * @author Ana Maria Salazar Bohorquez
+ * @author Richard Santiago Urrea Garcia
  */
 public class PiCalcTest {
 

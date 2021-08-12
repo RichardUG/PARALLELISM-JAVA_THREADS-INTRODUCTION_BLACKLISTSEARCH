@@ -8,8 +8,14 @@ package edu.eci.arsw.threads;
 /**
  *
  * @author hcadavid
+ * @author Ana Maria Salazar Bohorquez
+ * @author Richard Santiago Urrea Garcia
  */
 public class CountThreadsMain {
+    /**
+     * Inicializa los threads y los ejecuta
+     * @param a cadena de inicio del main
+     */
     public static void main(String a[]){
         CountThread countThread1 = new CountThread(0,99);
         CountThread countThread2 = new CountThread(100,199);
