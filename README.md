@@ -21,18 +21,17 @@
 > **Implementación ```CountThread```**
 > ```java
 > public class CountThread implements Runnable{
-    private int num1, num2;
-    public CountThread(int num1, int num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
-    @Override
-    public void run(){
-        for (int i=num1; i<=num2; i++){
-            System.out.println(i);
-        }
-    }
-    
+>    private int num1, num2;
+>    public CountThread(int num1, int num2) {
+>        this.num1 = num1;
+>        this.num2 = num2;
+>    }
+>    @Override
+>    public void run(){
+>        for (int i=num1; i<=num2; i++){
+>            System.out.println(i);
+>        }
+>    }   
 > ```
 
 2. Complete el método __main__ de la clase CountMainThreads para que:
