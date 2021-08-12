@@ -13,10 +13,13 @@ import java.util.List;
  */
 public class Main {
     
-    public static void main(String a[]){
+    public static void main(String a[]) throws InterruptedException {
+        long startTime = System.currentTimeMillis();
         HostBlackListsValidator hblv=new HostBlackListsValidator();
-        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55");
+        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55",100);
         System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
+        long endTime = System.currentTimeMillis();
+        System.out.println("Tiempo de ejecución: " + (endTime - startTime) + " milisegundos.");
         
     }
     
