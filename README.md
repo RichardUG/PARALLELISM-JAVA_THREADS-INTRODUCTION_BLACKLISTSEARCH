@@ -4,8 +4,8 @@
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
 ### Autores
 ```
-### Ana Maria Salazar Bohorquez
-### Richard Santiago Urrea Garcia
+ Ana Maria Salazar Bohorquez
+ Richard Santiago Urrea Garcia
 ```
 ### Dependencias:
 ####   Lecturas:
