@@ -2,7 +2,9 @@
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software - ARSW
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
-
+### Autores
+### Ana Maria Salazar Bohorquez
+### Richard Santiago Urrea Garcia
 
 ### Dependencias:
 ####   Lecturas:
