@@ -46,7 +46,7 @@
 > public class CountThreadsMain {
 > public static void main(String a[]){
 >        CountThread countThread1 = new CountThread(0,99);
->        CountThread countThread2 = new CountThread(100,199);
+>        CountThread countThread2 = new CountThread(99,199);
 >        CountThread countThread3 = new CountThread(200,299);
 >        Thread hilo1 = new Thread(countThread1);
 >        Thread hilo2 = new Thread(countThread2);
@@ -67,7 +67,7 @@
 > public class CountThreadsMain {
 > public static void main(String a[]){
 >        CountThread countThread1 = new CountThread(0,99);
->        CountThread countThread2 = new CountThread(100,199);
+>        CountThread countThread2 = new CountThread(99,199);
 >        CountThread countThread3 = new CountThread(200,299);
 >        Thread hilo1 = new Thread(countThread1);
 >        Thread hilo2 = new Thread(countThread2);
