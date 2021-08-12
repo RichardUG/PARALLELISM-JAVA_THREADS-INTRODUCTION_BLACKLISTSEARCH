@@ -6,6 +6,7 @@
 package edu.eci.arsw.blacklistvalidator;
 
 import edu.eci.arsw.spamkeywordsdatasource.HostBlacklistsDataSourceFacade;
+import edu.eci.arsw.threads.BlackListThread;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -14,8 +15,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Clase que realiza la descomposición del problema entre los hilos indicados y genera la respuesta al problema
  * @author hcadavid
+ * @author Ana Maria Salazar Bohorquez
+ * @author Richard Santiago Urrea Garcia
  */
 public class HostBlackListsValidator {
 
@@ -32,9 +35,9 @@ public class HostBlackListsValidator {
      * @return  Blacklists numbers where the given host's IP address was found.
      */
     public List<Integer> checkHost(String ipaddress,int N) throws InterruptedException{
-        LinkedList<Integer> blackListOcurrences=new LinkedList<>();
+        ArrayList<Integer> blacklisted=new ArrayList<>();
         ArrayList<BlackListThread> threads = new ArrayList<BlackListThread>();
-        int ocurrencesCount=0;
+        int blacklistedCount=0;
         HostBlacklistsDataSourceFacade skds=HostBlacklistsDataSourceFacade.getInstance();
         int count = skds.getRegisteredServersCount()/N;
         int mod = skds.getRegisteredServersCount()%N;
@@ -54,11 +57,11 @@ public class HostBlackListsValidator {
         }
         int checkedListsCount=0;
         for (BlackListThread thread : threads) {
-            checkedListsCount += thread.getCheckedListsCount();
-            ocurrencesCount += thread.getOcurrencesCount();
-            blackListOcurrences.addAll(thread.getBlackListOcurrences());
+            checkedListsCount += thread.getRevisedBlackListsCount();
+            blacklistedCount += thread.getBlacklistedCount();
+            blacklisted.addAll(thread.getBlacklisted());
         }
-        if (ocurrencesCount>=BLACK_LIST_ALARM_COUNT){
+        if (blacklistedCount>=BLACK_LIST_ALARM_COUNT){
             skds.reportAsNotTrustworthy(ipaddress);
         }
         else{
@@ -66,7 +69,7 @@ public class HostBlackListsValidator {
         }
         LOG.log(Level.INFO, "Checked Black Lists:{0} of {1}", new Object[]{checkedListsCount, skds.getRegisteredServersCount()});
 
-        return blackListOcurrences;
+        return blacklisted;
     }
 
 

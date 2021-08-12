@@ -21,13 +21,13 @@ public class CountThreadsMain {
         CountThread countThread2 = new CountThread(99,199);
         CountThread countThread3 = new CountThread(200,299);
 
-        Thread hilo1 = new Thread(countThread1);
-        Thread hilo2 = new Thread(countThread2);
-        Thread hilo3 = new Thread(countThread3);
+        Thread Thread1 = new Thread(countThread1);
+        Thread Thread2 = new Thread(countThread2);
+        Thread Thread3 = new Thread(countThread3);
 
-        hilo1.start();
-        hilo2.start();
-        hilo3.start();
+        Thread1.start();
+        Thread2.start();
+        Thread3.start();
 
     }
 }
