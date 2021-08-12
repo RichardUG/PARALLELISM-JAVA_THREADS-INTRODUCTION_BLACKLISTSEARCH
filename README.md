@@ -32,6 +32,7 @@
 >            System.out.println(i);
 >        }
 >    }   
+> }
 > ```
 
 2. Complete el método __main__ de la clase CountMainThreads para que:
@@ -39,6 +40,26 @@
 	2. Inicie los tres hilos con 'start()'.
 	3. Ejecute y revise la salida por pantalla. 
 	4. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
+
+> **Implementación  ```CountMainThreads``` con ```start()```**
+> ```java
+> public class CountThreadsMain {
+> public static void main(String a[]){
+>        CountThread countThread1 = new CountThread(0,99);
+>        CountThread countThread2 = new CountThread(100,199);
+>        CountThread countThread3 = new CountThread(200,299);
+>        Thread hilo1 = new Thread(countThread1);
+>        Thread hilo2 = new Thread(countThread2);
+>        Thread hilo3 = new Thread(countThread3);
+>        hilo1.start();
+>        hilo2.start();
+>        hilo3.start();
+>    }
+>}
+> ```
+
+>**Resultado  ```CountMainThreads``` con ```start()```**
+> ![](PARALLELISM-JAVA_THREADS-INTRODUCTION_BLACKLISTSEARCH/img/CountThreadsMainStartResult.PNG)
 
 **Parte II - Ejercicio Black List Search**
 
