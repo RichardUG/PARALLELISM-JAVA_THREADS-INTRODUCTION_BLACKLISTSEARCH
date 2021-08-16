@@ -258,4 +258,5 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 
 ### Licencia & Derechos de Autor
 **©️** Ana Maria Salazar Bohorquez && Richard Santiago Urrea Garcia, Estudiantes de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
+
 Licencia bajo la [GNU General Public License](/LICENSE.txt)
