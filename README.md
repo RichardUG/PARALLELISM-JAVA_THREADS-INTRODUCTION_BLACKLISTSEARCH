@@ -131,10 +131,19 @@ A partir de lo anterior, implemente la siguiente secuencia de experimentos para 
 
 1. Un solo hilo.
 ![](img/Respuesta1Hilo.PNG)
+![](img/Rendimiento1Hilo.PNG)
 2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
-4. Tantos hilos como el doble de núcleos de procesamiento.
-5. 50 hilos.
-6. 100 hilos.
+![](img/RespuestaNucleos.PNG)
+![](img/RendimientoNucleos.PNG)
+3. Tantos hilos como el doble de núcleos de procesamiento.
+![](img/RespuestaDobleNucleos.PNG)
+![](img/RendimientoDobleNucleos.PNG)
+4. 50 hilos.
+![](img/Respuesta50Hilos.PNG)
+![](img/Rendimiento50Hilos.PNG)
+5. 100 hilos.
+![](img/Respuesta100Hilos.PNG)
+![](img/Rendimiento100Hilos.PNG)
 
 Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso. ![](img/jvisualvm.png)
 
