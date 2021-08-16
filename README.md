@@ -2,11 +2,7 @@
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software - ARSW
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
-### Autores
-```
- Ana Maria Salazar Bohorquez
- Richard Santiago Urrea Garcia
-```
+
 ### Dependencias:
 ####   Lecturas:
 *  [Threads in Java](http://beginnersbook.com/2013/03/java-threads/)  (Hasta 'Ending Threads')
@@ -256,5 +252,10 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 	
 	* Dado que la ley de Amdahls nos asegura que en cuanto mayor es la cantidad de hilos hay una mejora en el tiempo de ejecución, podemos decir que el hecho de usar 100 máquinas para que cada una ejecute un hilo es un gasto innecesario de recursos y que además en ciertos casos podria aumentar el tiempo de ejecución de estos.
 
+### Autores
+* [Ana Maria Salazar Bohorquez](https://github.com/anamariasalazar)
+* [Richard Santiago Urrea Garcia](https://github.com/RichardUG)
 
-
+### Licencia & Derechos de Autor
+**©️** Ana Maria Salazar Bohorquez && Richard Santiago Urrea Garcia, Estudiantes de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
+Licencia bajo la [GNU General Public License](/LICENSE.txt)
