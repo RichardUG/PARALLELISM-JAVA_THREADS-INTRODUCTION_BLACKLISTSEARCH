@@ -231,6 +231,7 @@ A partir de lo anterior, implemente la siguiente secuencia de experimentos para 
 
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
+
 ![](img/Tabla.PNG)
 ![](img/Grafico.PNG)
 
